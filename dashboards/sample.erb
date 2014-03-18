@@ -1,0 +1,74 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.numColumns = 5
+  Dashing.gridsterLayout('[{"col":1,"row":1},{"col":3,"row":1},{"col":5,"row":1},{"col":1,"row":2},{"col":4,"row":2},{"col":1,"row":3},{"col":2,"row":3},{"col":3,"row":3},{"col":1,"row":4},{"col":2,"row":4},{"col":3,"row":4},{"col":3,"row":2}]')
+});
+</script>
+
+<% content_for(:title) { "My super sweet dashboard" } %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is my lovely dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
+    </li>
+
+    <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="facebook_feed" data-view="Comments" style="background-color:#ff9618;" data-moreinfo="My Facebook Home"></div>
+    </li>
+
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="weather" data-view="Weather"></div>
+    </li>
+
+    <li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="pc_news_feed" data-view="Feeds" style="background-color:#ff9618;" data-moreinfo="PC World News!"></div>
+    </li>
+
+    <li data-row="2" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="hacker_news_rss" data-view="Feeds" style="background-color:#ff9618;" data-moreinfo="Hacker News"></div>
+    </li>
+
+    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="harvest_daily_hours" data-view="Number" data-title="Today working hours" data-moreinfo="out of 7 hours"></div>
+    </li>
+
+    <li data-row="3" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="harvest_weekly_hours" data-view="Number" data-title="This week working hours" data-moreinfo="out of 35 hours"></div>
+    </li>
+
+    <li data-row="3" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="harvest_monthly_hours" data-view="Number" data-title="This month working hours" data-moreinfo="out of 140 hours"></div>
+    </li>
+
+    <li data-row="4" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="github_daily_commits" data-view="Number" data-title="Daily Commits" data-moreinfo="in PicCollage"></div>
+    </li>
+
+    <li data-row="4" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="github_weekly_commits" data-view="Number" data-title="Weekly Commits" data-moreinfo="in PicCollage"></div>
+    </li>
+
+    <li data-row="4" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="github_monthly_commits" data-view="Number" data-title="Monthly Commits" data-moreinfo="in PicCollage"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="fblinkstat" data-view="List" data-unordered="true" data-title="FB link stats" data-moreinfo="for amnesty.ca links"></div>
+    <i class="icon-facebook icon-background"></i>
+    </li>
+
+    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Buzzwords" data-moreinfo="# of times said around the office"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="valuation" data-view="Number" data-title="Current Valuation" data-moreinfo="In billions" data-prefix="$"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#ff9618"></div>
+    </li> -->
+
+  </ul>
+  <!-- <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center> -->
+</div>
